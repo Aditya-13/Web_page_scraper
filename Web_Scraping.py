@@ -34,7 +34,7 @@ with open(os.getcwd() + "\\images.txt", "w") as file:
 
 #=================================== Gets all the links from the website ========================================
 
-links = soup.find_all('a', attrs={'href': re.compile("^https://")})
+links = soup.find_all('a', attrs={'href': re.compile("^https://")}) # Extracts everything which starts with "https://" in <a><\a> tags.. 
 links_list = []
 
 for i in links:
